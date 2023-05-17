@@ -16,7 +16,7 @@ body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 
-.routine-body {
+/* .routine-body {
   display: grid;
   grid-template-rows: 10% 80% 10%;
   grid-template-areas:
@@ -24,7 +24,7 @@ body {
     "main"
     "footer";
   height: 100vh;
-}
+} */
 
 .indexBackground {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c19e67+0,b68d4c+1,b68d4c+16,c19e67+45,f3e2c7+99,e9d4b3+100 */
@@ -60,54 +60,28 @@ body {
 }
 
 .page {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
-  background: rgb(180, 221, 180); /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    rgba(180, 221, 180, 1) 0%,
-    rgba(131, 199, 131, 1) 17%,
-    rgba(82, 177, 82, 1) 33%,
-    rgba(0, 138, 0, 1) 67%,
-    rgba(0, 87, 0, 1) 83%,
-    rgba(0, 36, 0, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    rgba(180, 221, 180, 1) 0%,
-    rgba(131, 199, 131, 1) 17%,
-    rgba(82, 177, 82, 1) 33%,
-    rgba(0, 138, 0, 1) 67%,
-    rgba(0, 87, 0, 1) 83%,
-    rgba(0, 36, 0, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    rgba(180, 221, 180, 1) 0%,
-    rgba(131, 199, 131, 1) 17%,
-    rgba(82, 177, 82, 1) 33%,
-    rgba(0, 138, 0, 1) 67%,
-    rgba(0, 87, 0, 1) 83%,
-    rgba(0, 36, 0, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 */
-
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=9dd1fd&c2=fffce2&gt=l&gd=dtt
+  */
+  /* background: #fffae7; */
+  /* background: linear-gradient(180deg, #3B77B0, #fff2c2); */
+  background: url(assets/pinksunrise.jpeg);
+  background-size: cover;
+  padding-bottom: 5%;
+  height: fit-content;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  max-width: 1120;
-  margin: 0 auto;
-  padding: 2rem;
-  min-height: calc(100vh - (6rem + 6rem));
 }
 
-header {
+/* header {
   grid-area: header;
-}
+} */
 
-#night-routine,
+/* #night-routine,
 #morning-routine {
   grid-area: main;
-}
+} */
 
 footer {
   grid-area: footer;
@@ -182,12 +156,12 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
-  height: 550px;
+  height: 100vh;
 }
 
 .mainContainer {
   display: flex;
-  height: 550px;
+  /* height: 100vh; */
 }
 
 header {
@@ -200,11 +174,18 @@ header {
   height: 6rem;
 }
 
-.logo-container {
-  background-color: aqua;
+.morningHeader {
+  /* background: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 svg {
@@ -213,6 +194,7 @@ svg {
 
 .hero {
   padding: 3rem;
+  height: 100vh;
   width: 60vw;
 }
 
@@ -240,7 +222,7 @@ svg {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: stretch;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   padding: 3rem;
 }
 
@@ -273,7 +255,7 @@ svg {
 }
 
 .infoPic1 {
-  background-image: url('assets/healthyskingirl.jpeg');
+  background-image: url('assets/skincarejars.png');
 }
 
 .infoPic2 {
@@ -281,7 +263,7 @@ svg {
 }
 
 .infoPic3 {
-  background-image: url('assets/skincarejars.png');
+  background-image: url('assets/healthyskingirl.jpeg');
 }
 
 .infoContainer ul li {
@@ -297,6 +279,7 @@ svg {
 .loginContainer {
   width: 40vw;
   height: 100%;
+
 }
 
 .form-1 {
@@ -305,6 +288,9 @@ svg {
   /* position: relative; */
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   
   /* Styles */
   background: #f4e8ed;
@@ -343,10 +329,6 @@ svg {
   height: auto;
   margin-bottom: 25px;
 }
-
-/* .form-1 input {
-  width: 100%;
-} */
 
 .field {
   position: relative;
@@ -422,7 +404,7 @@ svg {
   margin: 0 auto;
   cursor: pointer;
   padding: 12px;
-  background: linear-gradient(-170deg, rgba(107,51,65,1) 0%, rgb(164, 60, 86) 100%);
+  background: linear-gradient(170deg, rgba(107,51,65,1) 0%, rgb(146, 56, 79) 100%);
   color: #ffe0e5;
 }
 
@@ -498,16 +480,17 @@ ul li {
 }
 
 .exampleContainer p {
-  background: lightgrey;
+  background: rgb(230, 230, 230);
   height: 25px;
   width: 150px;
   border-radius: 10px;
+  margin-right: 5px;
   text-align: center;
 }
 
 .exampleContainer button {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   border: none;
   border-radius: 25px;
   display: inline;
@@ -574,7 +557,7 @@ input:focus {
 
 .routine-selector-container h2 {
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   cursor: default;
 }
 
@@ -589,8 +572,9 @@ input:focus {
 }
 
 .checklist-container {
-  background-color: #d9d9d9;
-  padding: 2rem;
+  /* background-color: #fff1a0; */
+  width: 40%;
+  padding: 1rem;
 }
 
 .checklist-container form {
@@ -610,17 +594,45 @@ input:focus {
   background: none;
 }
 
+.steps-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-left h2 {
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.reset button {
+  background: pink;
+  border: none;
+  outline: none;
+  padding: .5rem;
+  width: 100px;
+  margin: 0 auto;
+}
+
 .todoItem {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
 }
 
+.todoInput {
+  background: #ffefb6;
+  /* margin-right: 1rem; */
+}
+
 .todoItem span:first-child {
-  background-color: white;
-  width: 75%;
+  background-color: #F7D350;
+  width: 100%;
   border-radius: 11px;
   padding-left: 1rem;
+  /* margin-right: 1rem; */
   cursor: pointer;
 }
 
@@ -638,10 +650,17 @@ input:focus {
 }
 
 #morning-routine {
-  background-color: #feffdc;
+  align-self: center;
+  width: 65%;
+  padding: 2rem;
+  /* background-color: #fff3ac; */
+  background-color: #fffdf6;
+  border-radius: 50px;
 }
 
 #morning-routine h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
   color: black;
 }
 
@@ -654,14 +673,17 @@ input:focus {
 }
 
 .fa-circle {
-  color: #b1b1b1;
+  font-size: 30px;
+  color: #b5b2a8;
 }
 
 .fa-circle-check {
+  font-size: 30px;
   color: #453e3e;
 }
 
 .fa-trash-can {
+  margin-left: 1rem;
   color: #453e3e;
 }
 
