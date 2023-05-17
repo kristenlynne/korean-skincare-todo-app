@@ -66,12 +66,16 @@ body {
   */
   /* background: #fffae7; */
   /* background: linear-gradient(180deg, #3B77B0, #fff2c2); */
-  background: url(assets/pinksunrise.jpeg);
+  /* background: url(assets/pinksunrise.jpeg); */
+  /* background: url("https://images.unsplash.com/photo-1533814241121-a93e5cd7399b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"); */
+  /* background: url("https://images.unsplash.com/photo-1568397917828-25e02104303f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"); */
+  background: url("https://images.unsplash.com/photo-1439194850785-37cfb3d7efc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80");
   background-size: cover;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   height: fit-content;
   display: flex;
   justify-content: center;
+
 }
 
 /* header {
@@ -83,9 +87,9 @@ body {
   grid-area: main;
 } */
 
-footer {
+/* footer {
   grid-area: footer;
-}
+} */
 
 h1 {
   text-align: center;
@@ -116,7 +120,7 @@ h1 {
 .logOut a {
   padding-left: 1rem 1rem 0.5rem 1rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(20, 19, 19);
   margin-right: 1rem;
 }
@@ -139,13 +143,18 @@ footer {
   padding-top: 2rem;
 }
 
+.morningFooter {
+  color: #fff;
+  background: none;
+}
+
 .loginFooter {
   padding-top: 2rem;
 }
 
 .completed {
   text-decoration: line-through;
-  color: gray;
+  color: #65521B;
 }
 
 main {
@@ -179,6 +188,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 4rem;
+}
+
+.morningHeader svg {
+  width: 200px;
 }
 
 .logo-container {
@@ -571,10 +585,8 @@ input:focus {
   align-items: center;
 }
 
-.checklist-container {
-  /* background-color: #fff1a0; */
-  width: 40%;
-  padding: 1rem;
+.checklist-container .del {
+  padding: 0px;
 }
 
 .checklist-container form {
@@ -583,15 +595,17 @@ input:focus {
 }
 
 .checklist-container form input:first-child {
-  width: 75%;
+  width: 225px;
   border-radius: 11px;
   padding: 0.3rem 0.3rem 0.3rem 1rem;
   border: none;
+  background: #fcdf8e;
 }
 
 .checklist-container form button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .steps-left {
@@ -603,17 +617,24 @@ input:focus {
 }
 
 .steps-left h2 {
-  font-size: 20px;
+  font-size: 18px;
   padding: 25px 0;
 }
 
 .reset button {
-  background: pink;
+  background: #bcc5cf;
   border: none;
+  border-radius: 11px;
   outline: none;
   padding: .5rem;
   width: 100px;
   margin: 0 auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reset button:hover {
+  background: #adb6c1;
 }
 
 .todoItem {
@@ -622,17 +643,11 @@ input:focus {
   margin-bottom: 5%;
 }
 
-.todoInput {
-  background: #ffefb6;
-  /* margin-right: 1rem; */
-}
-
 .todoItem span:first-child {
-  background-color: #F7D350;
-  width: 100%;
+  background-color: #f2c342;
+  width: 225px;
   border-radius: 11px;
   padding-left: 1rem;
-  /* margin-right: 1rem; */
   cursor: pointer;
 }
 
@@ -647,19 +662,21 @@ input:focus {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 #morning-routine {
   align-self: center;
-  width: 65%;
-  padding: 2rem;
-  /* background-color: #fff3ac; */
+  /* width: 65%; */
+  padding: 1.5rem;
   background-color: #fffdf6;
   border-radius: 50px;
+  position: relative;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 #morning-routine h1 {
-  font-size: 24px;
+  font-size: 22px;
   padding-bottom: 20px;
   color: black;
 }
@@ -683,7 +700,6 @@ input:focus {
 }
 
 .fa-trash-can {
-  margin-left: 1rem;
   color: #453e3e;
 }
 
