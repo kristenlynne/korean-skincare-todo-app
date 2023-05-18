@@ -75,7 +75,11 @@ body {
   height: fit-content;
   display: flex;
   justify-content: center;
+}
 
+.night {
+  background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/07/31/126156/741353f06319a0da7bd8f06012e85308.jpg");
+  background-size: cover;
 }
 
 /* header {
@@ -665,14 +669,60 @@ input:focus {
   margin-left: 10px;
 }
 
+/* --------------------------------------- night start -------------------- */
+
+.night #morning-routine {
+  background: #20293A;
+}
+
+.night i, .night #morning-routine .todoRoutine, .night h2, .night .morningFooter span, .night .logout {
+  color: #FEF8EC;
+}
+
+.night .routine-selector-container h2:first-child {
+  border-right: 1px solid #FEF8EC;
+}
+
+.night .todoItem span:first-child {
+  background-color: #f7e4bf;
+}
+
+.night .reset button {
+  background: #9FB6E8;
+}
+
+.night .reset button:hover {
+  background: #8aa4dc;
+}
+
+.night .checklist-container form input:first-child {
+  background: #FEF8EC;
+}
+
+.night .completed {
+  color: #6F6758;
+}
+
+.night .fa-circle {
+  font-size: 30px;
+  color: #f0cc84;
+}
+
+.night .fa-circle-check {
+  font-size: 30px;
+  color: #EAB64D;
+}
+
+/* --------------------------------------- night end -------------------- */
+
 #morning-routine {
   align-self: center;
   /* width: 65%; */
   padding: 1.5rem;
-  background-color: #fffdf6;
+  background-color: #FAF7F2;
   border-radius: 50px;
   position: relative;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 #morning-routine h1 {
@@ -681,13 +731,13 @@ input:focus {
   color: black;
 }
 
-#night-routine {
+/* #night-routine {
   background-color: #272c47;
 }
 
 #night-routine h1 {
   color: white;
-}
+} */
 
 .fa-circle {
   font-size: 30px;
