@@ -16,84 +16,21 @@ body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 
-/* .routine-body {
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  height: 100vh;
-} */
-
-.indexBackground {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c19e67+0,b68d4c+1,b68d4c+16,c19e67+45,f3e2c7+99,e9d4b3+100 */
-  background: rgb(193, 158, 103); /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    rgba(193, 158, 103, 1) 0%,
-    rgba(182, 141, 76, 1) 1%,
-    rgba(182, 141, 76, 1) 16%,
-    rgba(193, 158, 103, 1) 45%,
-    rgba(243, 226, 199, 1) 99%,
-    rgba(233, 212, 179, 1) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    rgba(193, 158, 103, 1) 0%,
-    rgba(182, 141, 76, 1) 1%,
-    rgba(182, 141, 76, 1) 16%,
-    rgba(193, 158, 103, 1) 45%,
-    rgba(243, 226, 199, 1) 99%,
-    rgba(233, 212, 179, 1) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to right,
-    rgba(193, 158, 103, 1) 0%,
-    rgba(182, 141, 76, 1) 1%,
-    rgba(182, 141, 76, 1) 16%,
-    rgba(193, 158, 103, 1) 45%,
-    rgba(243, 226, 199, 1) 99%,
-    rgba(233, 212, 179, 1) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 */
-}
-
 .page {
-  /*
-  * Created with https://www.css-gradient.com
-  * Gradient link: https://www.css-gradient.com/?c1=9dd1fd&c2=fffce2&gt=l&gd=dtt
-  */
-  /* background: #fffae7; */
-  /* background: linear-gradient(180deg, #3B77B0, #fff2c2); */
-  /* background: url(assets/pinksunrise.jpeg); */
   /* background: url("https://images.unsplash.com/photo-1533814241121-a93e5cd7399b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"); */
   /* background: url("https://images.unsplash.com/photo-1568397917828-25e02104303f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"); */
   background: url("https://images.unsplash.com/photo-1439194850785-37cfb3d7efc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80");
   background-size: cover;
-  /* padding-bottom: 5%; */
-  height: fit-content;
+  height: auto;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .night {
   background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/07/31/126156/741353f06319a0da7bd8f06012e85308.jpg");
   background-size: cover;
 }
-
-/* header {
-  grid-area: header;
-} */
-
-/* #night-routine,
-#morning-routine {
-  grid-area: main;
-} */
-
-/* footer {
-  grid-area: footer;
-} */
 
 h1 {
   text-align: center;
@@ -107,12 +44,6 @@ h1 {
 .todoRoutine {
   padding: 0 1.5rem;
 }
-
-/* .logo-container img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-} */
 
 .logOut {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -148,6 +79,7 @@ footer {
 }
 
 .morningFooter {
+  margin-top: 25px;
   color: #fff;
   background: none;
 }
@@ -182,17 +114,15 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
   width: 100%;
   height: 6rem;
 }
 
 .morningHeader {
-  /* background: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
+  height: 65px;
 }
 
 .morningHeader svg {
@@ -203,7 +133,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 svg {
@@ -441,9 +370,6 @@ svg {
 }
 
 .container {
-  /* background: #ddbec4; */
-  /* background: #f4e8ed; */
-  /* background: linear-gradient(165deg, rgb(218, 221, 224) 0%, rgb(255, 247, 247) 100%); */
   background: #f1c8cf;
   width: 100%;
   display: flex;
@@ -452,7 +378,6 @@ svg {
 }
 
 .aboutContainer {
-  /* background: lightseagreen; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -466,7 +391,6 @@ svg {
 }
 
 .exampleContainer {
-  /* background: #828282; */
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -475,8 +399,6 @@ svg {
   border-left: 1px solid #be929a;
   margin: 20px 0;
 }
-
-
 
 .sidePictureContainer {
   background: url(assets/skincareproducts.png);
@@ -519,7 +441,6 @@ ul li {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-  /* width: 70%; */
 }
 
 .signUpBody h1 {
@@ -530,7 +451,6 @@ ul li {
 .sectionSignUp {
   display: flex;
   justify-content: center;
-  /* background-color: #f8b2b2; */
   width: 90%;
 }
 
@@ -717,7 +637,6 @@ input:focus {
 
 #morning-routine {
   align-self: center;
-  /* width: 65%; */
   padding: 1.5rem;
   background-color: #FAF7F2;
   border-radius: 50px;
@@ -730,14 +649,6 @@ input:focus {
   padding-bottom: 20px;
   color: black;
 }
-
-/* #night-routine {
-  background-color: #272c47;
-}
-
-#night-routine h1 {
-  color: white;
-} */
 
 .fa-circle {
   font-size: 30px;
@@ -764,3 +675,9 @@ input:focus {
 .hide {
   display: none;
 }
+
+/* --------------------- media queries ---------------------*/
+
+/* @media screen and (max-width: 1300px) {
+
+} */
