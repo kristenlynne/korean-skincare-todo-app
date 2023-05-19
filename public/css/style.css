@@ -679,6 +679,302 @@ input:focus {
 /* --------------------- media queries ---------------------*/
 
 @media only screen and (max-width: 767px) {
+  /* --------------------------------------- / ---------------------------------------*/
+  h1 {
+    text-align: center;
+  }
+  .exampleH1 {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .todoRoutine {
+    padding: 0 1.5rem;
+  }
+  .logOut {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    align-self: flex-end;
+    position: absolute;
+    right: 5rem;
+  }
+  .logOut a {
+    padding-left: 1rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(20, 19, 19);
+    margin-right: 1rem;
+  }
+  .logOut a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    color: white;
+  }
+  footer {
+    background-color: #6B3341;
+    color: #ffe0e5;
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .loginFooter {
+    padding-top: 2rem;
+  }
+  main {
+    /* background: url(assets/overlay.png), url(assets/SRlandingimage.png); */
+    background: #6B3341;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 100vh; /* changed */
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-direction: column; /* added */
+  } 
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    width: 275px;
+  }
+  .hero {
+    padding: 2rem 0rem; /* changed */
+    height: fit-content; /* changed */
+    width: 100vw; /* changed */
+  }
+  .lala {
+    background-color: none; /* changed */
+    padding: 0rem 1rem; /* changed */
+    border-radius: 0; /* changed */
+  }
+  .hero h1 {
+    font-size: 1.5rem; /* changed */
+    color: #ffe0e5;
+    margin: 0 0 40px 0;
+  }
+  .tagline {
+    color: #f1c8cf;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .infoContainer {
+    background: #f5f0f0;
+    display: flex; /* changed */
+    flex-direction: column; /* changed */
+    padding: 3rem;
+  }
+  .child {
+    padding: 2rem;
+    background-color: #ddabbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .child h3 {
+    margin-top: 0;
+  }
+  .child ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .child li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  .infoPic1, .infoPic2, .infoPic3 {
+    display: none;
+  }
+  .infoContainer ul li {
+    padding-bottom: 15px;
+  }
+  .infoContainer h3 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  /* LOGIN and SIGNUP FORM */
+  .loginContainer {
+    width: 100vw; /* changed */
+    height: 100%;
+  }
+  .form-1 {
+    /* Size and position */
+    padding: 4rem;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    /* Styles */
+    background: #f4e8ed;
+    color: #7e7975;
+    box-shadow: -10px 0 10px -10px rgba(0, 0, 0, .4);
+  }
+  .form-1 h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddabbd;
+    margin-bottom: 25px;
+  }
+  .form-1 h1 .log-in {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .form-1 h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+  }
+  .form-1 h1 .sign-up {
+    color: #6c6763;
+    padding-left: 2px;
+  }
+  .form-1 .field {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .field {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .field input[type="email"], .field input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 40px;
+  }
+  .field i {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    /* transform: translateY(-50%); */
+    font-size: 20px;
+    color: #999;
+  }
+  .loginContainer form label {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .loginContainer button {
+    width: 75%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 12px;
+    background: linear-gradient(170deg, rgba(107,51,65,1) 0%, rgb(146, 56, 79) 100%);
+    color: #ffe0e5;
+  }
+  
+  .loginBtn {
+    margin-bottom: 25px;
+  }
+  
+  .signupContainer p {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .signupLink {
+    text-decoration: none;
+    color: rgb(255, 224, 229);
+  }
+  
+  .container {
+    background: #f1c8cf;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; /* changed */
+    justify-content: center;
+  }
+  
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    width: 100%; /* changed */
+  }
+  
+  .aboutContainer h2, .exampleContainer h2 {
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  
+  .exampleContainer {
+    width: 100%; /* changed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-left: 1px solid #be929a;
+    margin: 20px 0;
+  }
+  
+  .sidePictureContainer {
+    background: url(assets/skincareproducts.png);
+    background-size: cover;
+    display: flex;
+    width: 100%; /* changed */
+    height: 100px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .exampleContainer li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  
+  .exampleContainer p {
+    background: rgb(230, 230, 230);
+    height: 25px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  
+  .exampleContainer button {
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 25px;
+    display: inline;
+  }
+
+  /* ------------------- /todos/morningTodos && /todos/eveningTodos ------------------*/
   .morningHeader {
     padding: 50px 0;
   }
