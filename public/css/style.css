@@ -436,6 +436,17 @@ ul li {
   display: inline;
 }
 
+.signUpHeader {
+  background: #6B3341;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signUpHeader svg {
+  width: 200px;
+}
+
 .signUpBody {
   display: flex;
   flex-direction: column;
@@ -444,6 +455,7 @@ ul li {
 }
 
 .signUpBody h1 {
+  margin-top: 25px;
   text-align: center;
   color: black;
 }
@@ -459,14 +471,14 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 50%;
   padding: 2rem;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2),
-    0 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
 .signUpForm .submit input {
   display: block;
+  height: 44px;
+  width: 100px;
   margin: 10px;
   cursor: pointer;
   padding: 4px;
@@ -475,6 +487,7 @@ ul li {
 }
 
 .signUpForm input {
+  height: 44px;
   width: 100%;
   border: none;
   border-radius: 3px;
@@ -772,6 +785,20 @@ input:focus {
     margin: 2rem auto; /* changed */
     width: 75%; /* changed */
     height: 175px; /* changed */
+  }
+
+  /* ------------------------------------- /signup -----------------------------------*/
+
+  .signUpBody h1 {
+    color: #fff;
+  }
+  
+  .signUpForm {
+    width: 100%;
+  }
+  
+  .signUpForm .submit input {
+    font-size: 18px;
   }
 
   /* ------------------- /todos/morningTodos && /todos/eveningTodos ------------------*/
