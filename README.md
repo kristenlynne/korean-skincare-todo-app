@@ -5,7 +5,7 @@
 <img src="https://github.com/kristenlynne/kristenlynne/blob/main/projects/skincareroutine.gif">
 </p>
 
-🌱 **Link to live site:** [http://recruiters-love-seeing-live-demos.com/](https://shy-pink-penguin-vest.cyclic.app/)
+🌱 **Link to live site:** [shy-pink-penguin-vest.cyclic.app/](https://shy-pink-penguin-vest.cyclic.app/)
 
 ## How It's Made:
 
